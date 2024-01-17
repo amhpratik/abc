@@ -10,7 +10,7 @@ const timeCount = document.querySelector(".timer .timer_sec");
 // if startQuiz button clicked
 
 
- quiz_box.show = ()=>{
+ restart_quiz.onclick = ()=>{
   
     quiz_box.classList.add("activeQuiz"); //show quiz box
     showQuetions(0); //calling showQestions function
