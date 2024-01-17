@@ -11,7 +11,7 @@ const timeCount = document.querySelector(".timer .timer_sec");
 
 
  quiz_box.show = ()=>{
-    info_box.classList.remove("activeInfo"); //hide info box
+  
     quiz_box.classList.add("activeQuiz"); //show quiz box
     showQuetions(0); //calling showQestions function
     queCounter(1); //passing 1 parameter to queCounter
