@@ -12,16 +12,6 @@ const timeCount = document.querySelector(".timer .timer_sec");
 
 // if startQuiz button clicked
 start_btn.onclick = ()=>{
-    info_box.classList.add("activeInfo"); //show info box
-}
-
-// if exitQuiz button clicked
-exit_btn.onclick = ()=>{
-    info_box.classList.remove("activeInfo"); //hide info box
-}
-
-// if continueQuiz button clicked
-continue_btn.onclick = ()=>{
     info_box.classList.remove("activeInfo"); //hide info box
     quiz_box.classList.add("activeQuiz"); //show quiz box
     showQuetions(0); //calling showQestions function
