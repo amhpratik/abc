@@ -73,62 +73,11 @@
          </div  
          </div>
        
-      <!--JavaScript-->
-      <script>     
-      //getting the references
-      const  startBtn = document.querySelector(".start")
-      const infoBox = document.querySelector(".info-box")
-      const exitBtn = infoBox.querySelector(".buttons .quit")
-      const continueBtn = infoBox.querySelector(".buttons .cont")         
-      const quizBox = document.querySelector(".quiz-box")
-      const nextBtn = quizBox.querySelector(".next");            
-      const optionList = quizBox.querySelector(".option-list");    
-      const resultBox = document.querySelector(".result-box" )
-      const timeCount = quizBox.querySelector(".timer .sec")
-      const timeLine = quizBox.querySelector("header .timeline")
-      const timeOut = quizBox.querySelector(".timer .text")
-      const body = document.getElementsByTagName("body")[0];
- //
- //
- //           
-             //start button click event
-             startBtn.onclick = () => {
-              infoBox.classList.add("activeInfo")//shows info box
-              }
-//          
-             //exit button click event
-             exitBtn.onclick = () => {
-              infoBox.classList.remove("activeInfo")//removes info box
-              }
-//          
-            //continue button click event
-             continueBtn.onclick = () => {
-              infoBox.classList.remove("activeInfo")//removes info box
-              quizBox.classList.add("activeQuiz");
-              showQuestions(0);
-              queCount(1);
-              startTimer(11);//so that the time starts from 10
-              startTimeLine(0);
-              alert("Ready??")
-              alert("Goodluck!!!");
-              }
-//            
-//           
-//         
-            //defining objects
-            let que_count = 0;
-            let que_numb = 1;
-            let counter;
-            let counterLine;
-            let timeValue = 10;
-            let widthValue = 0;
-            let userScore = 0;
+
+
+
+
             
-            let tickIcon = '<div class = "icon tick"><i class = "fas fa-check"></i></div>';
-            let crossIcon = '<div class = "icon wrong"><i class = "fas fa-times"></i></div>';
-//
-//      
-// 
                 //next button click event
                 nextBtn.onclick = () => {
                 if(que_count < questions.length - 1){
